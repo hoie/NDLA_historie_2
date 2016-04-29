@@ -151,6 +151,17 @@
 			</div>
 		</div>
 
+		<div id='l3' class='link l3 link-v down'>
+			<div class="link-note">
+				<h2 id='l3title'></h2>
+				<h3 id='l3subtitle'></h3>
+				<div id='l3url' class="node-url">url</div>
+				<button class="edit" onclick="showLinkNote('l3');"><i class="fa fa-pencil"></i></button>
+				<textarea placeholder="Skriv ditt notat her..." id='l3n'></textarea>
+				<button class="close" onclick="hideLinkNote('l3');"><i class="fa fa-times"></i></button>
+			</div>
+		</div>
+
 	</div>
 
 	<div id='n1' class='node n1' onclick="showNodeNote('n1');" style="background-image: url(img/01_01_Napoleon.jpg);">
@@ -165,17 +176,6 @@
 <!-- NODE 2: Sult og nød -->
 
 	<div class="n2 node nodePlaceholder">
-
-		<div id='l3' class='link l3 link-h right'>
-			<div class="link-note">
-				<h2 id='l3title'></h2>
-				<h3 id='l3subtitle'></h3>
-				<div id='l3url' class="node-url">url</div>
-				<button class="edit" onclick="showLinkNote('l3');"><i class="fa fa-pencil"></i></button>
-				<textarea placeholder="Skriv ditt notat her..." id='l3n'></textarea>
-				<button class="close" onclick="hideLinkNote('l3');"><i class="fa fa-times"></i></button>
-			</div>
-		</div>
 
 		<div id='l4' class='link l4 link-h right'>
 			<div class="link-note">
@@ -430,7 +430,7 @@
 	var n9 = NDLAHistoryMindMap.createNode("Konstitusjonelt monarki i personalunion med Sverige", "Foto: Statuen av kong Karl Johan på slottsplassen/Morten Løberg, Samfoto, NTB Scanpix","","n9");
 	var l1 = NDLAHistoryMindMap.createLink(n1,n4, false, "", "", "l1");
 	var l2 = NDLAHistoryMindMap.createLink(n1,n5, false, "", "", "l2");
-	var l3 = NDLAHistoryMindMap.createLink(n2,n5, false, "", "", "l3");
+	var l3 = NDLAHistoryMindMap.createLink(n1,n2, false, "", "", "l3");
 	var l4 = NDLAHistoryMindMap.createLink(n2,n6, false, "", "", "l4");
 	var l5 = NDLAHistoryMindMap.createLink(n3,n6, false, "", "", "l5");
 	var l6 = NDLAHistoryMindMap.createLink(n4,n5, false, "", "", "l6");
